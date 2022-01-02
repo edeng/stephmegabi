@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <title>Dunder Mifflin, Inc.</title>
+    </head>
+    <body>
+    	<div id="main">
+    		<h1>Under Construction</h1>
+	        <img src="images/dm-logo.png"> </br>
+	        <img id="construction" src="images/under-construction.gif">
+
+	        <script type = "text/javascript">
+	            var image = document.getElementById("construction");
+	            var currentPos = 0;
+	            var images = ["images/under-construction-test.gif"]
+
+	            function hint() {
+	                if (++currentPos >= images.length)
+	                    currentPos = 0;
+
+	                image.src = images[currentPos];
+	            }
+
+	            setInterval(hint, 15000); // 30 second timer
+	        </script>
+
+	        <h1>Coming 
+	        	
+	        	<span class="red-text">C</span><span class="green-text">h</span><span class="red-text">r</span><span class="green-text">i</span><span class="red-text" id="secret-click" onclick="location.href='home.html';">s</span><span class="green-text">t</span><span class="red-text">m</span><span class="green-text">a</span><span class="red-text">s</span>
+
+	        	<span class="green-text">2</span><span class="red-text">0</span><span class="green-text">2</span><span class="red-text">1</span><span class="green-text">!</span>
+	        </h1>
+
+
+	        <!-- The Hunted Soundcloud autoplay --> 
+	        <div>
+				<iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296934525&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>	        
+			</div>
+		</div>
+    </body>
+</html>
